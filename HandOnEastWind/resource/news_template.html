@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script type="text/javascript">
+        function changeFontSize(fontIndex)
+        {
+            switch(fontIndex)
+            {
+                case 0:
+                document.getElementById('content').style.fontSize = "13pt";
+                break;
+                case 1:
+                document.getElementById('content').style.fontSize = "14pt";
+                break;
+                case 2:
+                document.getElementById('content').style.fontSize = "17pt";
+                break;
+                default:
+                break;
+            }
+        }
+    </script>
+    <style type="text/css">
+        body{
+            margin:0 auto;
+            
+            text-align:left;
+        }
+    
+    #content {
+        margin-left:10px;
+        margin-right:10px;
+        line-height:25px
+    }
+    
+    div.contentB img{
+        max-width:100% !important;
+        height:auto !important;
+    }
+</style>
+</head>
+	<body>
+		<div style="padding:0px">
+            <div class="top">
+                <div class="contentA"
+                    style="
+                    border-left: 10px #C93 solid;
+                    margin-top:10px;
+                    padding-top:3px;
+                    padding-bottom:3px;">
+                    
+                    <div class="title" style="
+                        margin-left:10px;
+                        margin-bottom:10px;
+                        font-size:19px;
+                        "><b></>{title}</b></div>
+                    
+                    <div class="newsandtime" style="
+                        font-size:10px;
+                        color:#999;
+                        margin-left:10px">
+                        <div class="c">{time} &ensp;&ensp;&ensp;&ensp; {meidaSting}</div>
+                        
+                    </div>
+                    
+                </div>
+                <div id="content" class="contentB">
+                    
+                    {Content}
+                    
+                </div>
+	
+		</div>
+	</body>
+</html>
